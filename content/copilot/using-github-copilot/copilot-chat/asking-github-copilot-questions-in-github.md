@@ -349,7 +349,16 @@ You can attach an image to {% data variables.product.prodname_copilot_short %} a
 ### Attaching an image to your chat prompt
 
 1. Go to the immersive view of {% data variables.product.prodname_copilot_chat_short %} ([https://github.com/copilot](https://github.com/copilot)).
-1. Make sure you have **GPT-4o** selected in the AI model picker at the top of the page.
+1. If you see the AI model picker at the top of the page, select one of the models that supports adding images to prompts:
+
+   * {% data variables.copilot.copilot_gpt_4o %} (the default that's used if you don't see a model picker)
+   * {% data variables.copilot.copilot_claude_sonnet_35 %}
+   * {% data variables.copilot.copilot_claude_sonnet_37 %}
+   * {% data variables.copilot.copilot_gemini_flash %}
+   * {% data variables.copilot.copilot_gemini_25_pro %}
+
+   ![Screenshot of the model picker with the list of models expanded.](/assets/images/help/copilot/model-picker-copilot-immersive.png)
+
 1. Do one of the following:
 
    * Copy an image and paste it into the prompt box at the bottom of the page.
@@ -379,6 +388,17 @@ You can ask {% data variables.product.prodname_copilot_short %} a question about
    The {% data variables.product.prodname_copilot_chat %} panel is displayed and {% data variables.product.prodname_copilot_short %} responds to your request.
 
 {% data reusables.copilot.stop-response-generation %}
+
+## Accessing {% data variables.product.prodname_copilot_chat_short %} from the dashboard
+
+You can access {% data variables.product.prodname_copilot_short %}'s immersive view from the dashboard. The dashboard is your personalized overview of your activity on {% data variables.product.github %}, seen when you visit https://github.com while logged in.
+
+1. Go to the dashboard at [https://github.com](https://github.com).
+1. In the "Ask {% data variables.product.prodname_copilot_short %}" box, type a question and press <kbd>Enter</kbd>.
+
+   ![Screenshot of the dashboard with the "Ask Copilot" box highlighted with an orange outline.](/assets/images/help/copilot/copilot-chat-dashboard.png)
+
+   You will be taken to the immersive view where {% data variables.product.prodname_copilot_short %} will respond to your request.
 
 ## Extending {% data variables.product.prodname_copilot_chat_dotcom_short %}
 

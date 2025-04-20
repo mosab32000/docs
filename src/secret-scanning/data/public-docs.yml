@@ -720,6 +720,28 @@
   hasPushProtection: true
   hasValidityCheck: false
   isduplicate: false
+- provider: Bitrise
+  supportedSecret: Bitrise Personal Access Token
+  secretType: bitrise_personal_access_token
+  versions:
+    fpt: '*'
+    ghec: '*'
+  isPublic: true
+  isPrivateWithGhas: true
+  hasPushProtection: true
+  hasValidityCheck: false
+  isduplicate: false
+- provider: Bitrise
+  supportedSecret: Bitrise Workspace API Token
+  secretType: bitrise_workspace_api_token
+  versions:
+    fpt: '*'
+    ghec: '*'
+  isPublic: true
+  isPrivateWithGhas: true
+  hasPushProtection: true
+  hasValidityCheck: false
+  isduplicate: false
 - provider: Brevo
   supportedSecret: Sendinblue API Key
   secretType: sendinblue_api_key
@@ -1689,7 +1711,7 @@
     ghes: '*'
   isPublic: false
   isPrivateWithGhas: true
-  hasPushProtection: false
+  hasPushProtection: true
   hasValidityCheck: '{% ifversion fpt or ghes %}false{% else %}true{% endif %}'
   isduplicate: false
 - provider: Google
@@ -1713,7 +1735,7 @@
     ghes: '*'
   isPublic: false
   isPrivateWithGhas: true
-  hasPushProtection: false
+  hasPushProtection: true
   hasValidityCheck: false
   isduplicate: false
 - provider: Grafana
@@ -1977,7 +1999,7 @@
     ghes: '>=3.14'
   isPublic: false
   isPrivateWithGhas: true
-  hasPushProtection: true
+  hasPushProtection: false
   hasValidityCheck: false
   isduplicate: false
 - provider: IBM
@@ -1989,7 +2011,7 @@
     ghes: '>=3.14'
   isPublic: false
   isPrivateWithGhas: true
-  hasPushProtection: true
+  hasPushProtection: false
   hasValidityCheck: false
   isduplicate: false
 - provider: Intercom
@@ -2297,7 +2319,7 @@
     ghes: '*'
   isPublic: true
   isPrivateWithGhas: true
-  hasPushProtection: false
+  hasPushProtection: true
   hasValidityCheck: '{% ifversion fpt or ghes %}false{% else %}true{% endif %}'
   isduplicate: true
 - provider: Mailgun
@@ -3259,6 +3281,17 @@
   hasPushProtection: true
   hasValidityCheck: false
   isduplicate: false
+- provider: RunPod
+  supportedSecret: RunPod API Key
+  secretType: runpod_api_key
+  versions:
+    fpt: '*'
+    ghec: '*'
+  isPublic: true
+  isPrivateWithGhas: true
+  hasPushProtection: true
+  hasValidityCheck: false
+  isduplicate: false
 - provider: Samsara
   supportedSecret: Samsara API Token
   secretType: samsara_api_token
@@ -3759,7 +3792,7 @@
     ghes: '*'
   isPublic: true
   isPrivateWithGhas: true
-  hasPushProtection: false
+  hasPushProtection: true
   hasValidityCheck: '{% ifversion fpt or ghes %}false{% else %}true{% endif %}'
   isduplicate: false
 - provider: Stripe
